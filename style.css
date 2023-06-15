@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Signika:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;500&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Kalam&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo a {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Eczar', serif;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.menu li {
+  margin: 0 8px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 30px;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: white;
+  background-color: #ff5722;
+}
+
+
+/* Hero section styles */
+.hero-section {
+  background-image: url("images/shiva.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: 'Concert One', cursive;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e64a19;
+}
+
+/* WheretoNext */
+.wheretonext-container {
+  text-align: center;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.wheretonext-ul {
+  margin: 20px 0;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+}
+
+.wheretonext-ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  list-style-type: none;
+  text-decoration: none;
+  flex: 0 0 auto;
+  background-color: #f4f3f1;
+  border-radius: 25px;
+  padding: 5px 0 5px 0;
+  margin: 0 10px;
+  font-family: 'Signika', sans-serif;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.wheretonext-ul li:hover {
+  background-color: rgba(251, 92, 44, 0.875);
+}
+
+.wheretonext_font{
+  margin: 0 25px; 
+  background-color: white; 
+  font-size: 25px; 
+  font-family:'headings',Arial,sans-serif; 
+  font-weight: 700;
+}
+
+.wheretonext-ul li a {
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #343333;
+  min-width: 100px;
+  overflow: initial;
+  text-align: center;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.wheretonext-ul li:hover a {
+  color: #fff;
+}
+
+.wheretonext-ul li img {
+  border-radius: inherit;
+  display: inline-block;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+  max-width: 100%;
+}
+
+/* image section */
+
+.container {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.photo {
+  position: relative;
+  text-align: center;
+  color: #f4f3f1;
+  display: flex;
+  font-size: 1.45em;
+  display: inline-block;
+  width: 300px;
+}
+
+.state {
+  font-size: 18px;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 25px;
+  left: 55px;
+}
+
+.container img {
+  border-radius: 5px;
+  display: flex;
+  height: 400px;
+  width: 250px;
+  margin: 10px;
+}
+
+.photo img {
+  transition: 0.1s all ease-in-out;
+}
+
+.photo:hover img {
+  transform: scale(1.008);
+}
+
+.about em {
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+}
+
+.gap p {
+  font-size: 17px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .logo{
+    text-align: center;
+  }
+
+  .logo a {
+    font-size: 18px;
+  }
+  nav{
+    display: block;
+    padding: 0px;
+  }
+
+  .menu {
+    margin: 0 0 5px 0;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .menu li {
+    margin: 6px 0;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    display: block;
+    font-weight: 800;
+    padding: 5px 6px;
+    border-radius: 30px;
+    transition: color 0.3s;
+  }  
+
+/* Hero section  */
+  .hero-section{
+    background-image: url("images/shiva_mobile.jpg");
+  }
+  .wheretonext-ul {
+    padding: 0;
+    margin: 13px 0;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+  }
+  .wheretonext-ul li {
+    padding: 5px 0;
+  }
+  .wheretonext_font{
+    margin: 0 25px; 
+    background-color: white; 
+    font-size: 20px; 
+    font-family: 'Eczar', serif; 
+    font-weight: 900;
+  }
+  .about em {
+    font-size: 14px;
+  }
+  
+  .gap p {
+    font-size: 11px;
+  }
+  .container img {
+    border-radius: 5px;
+    display: flex;
+    height: 200px;
+    width: 110px;
+    margin: 5px;
+  }
+  .photo {
+    position: relative;
+    text-align: center;
+    color: #f4f3f1;
+    display: flex;
+    font-size: 0.8rem;
+    display: inline-block;
+    width: 300px;
+  }
+  .bottom-left {
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+  }
+  .state{
+    font-size: 12px;
+  }
+}
